@@ -32,7 +32,13 @@ export default class Useful{
             file.onerror = err => {
                 reject({err})
             }
-            file.readAsDataURL(photo)
+            if(photo){
+                file.readAsDataURL(photo)
+            }else{
+                resolve("")
+            }
+            
+            
         })
     }
     static get(url){
