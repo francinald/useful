@@ -37,8 +37,6 @@ export default class Useful{
             }else{
                 resolve("")
             }
-            
-            
         })
     }
     static get(url){
